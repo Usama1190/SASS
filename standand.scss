@@ -1,0 +1,52 @@
+// @import 'reset';
+// @import 'colors.scss';   // @import '_colors.scss';
+
+// body {
+//     font-family: 'Halvetica', sans-serif;
+//     font-size: 18px;
+//     color: red;
+// }
+
+// @mixin important-text {
+//     color: red;
+//     font-size: 25px;
+//     font-weight: bold;
+//     border: 1px solid blue;
+// }
+
+// .danger {
+//     @include important-text();
+//     background-color: green;
+// }
+
+
+// @mixin bordered($color, $width) {
+//     border: $width solid $color;
+// }
+
+// .article {
+//     @include bordered(1px, blue)
+// }
+
+// .note {
+//     @include bordered(2px, red)
+// }
+
+.basic-button {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-report {
+    @extend .basic-button;
+    background-color: red;
+}
+
+.button-submit {
+    @extend .basic-button;
+    background-color: green;
+    color: white;
+}
